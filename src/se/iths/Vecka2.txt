@@ -1,0 +1,170 @@
+2022-08-30
+
+Man har 2 möjligheter till omtenta eller att komplettera en labb
+
+
+Alltid döpa labbar till blablaFörnamnEfternamn.zip
+tex. Labb1JuliaLerebäck.zip
+
+Från och med Labb3 kommer vi använda Github
+
+Skriv koder på Engelska
+
+Java Syntax:
+Java Syntax = "Regler"
+Om man inte följer "reglerna" så klagar kompilatorn
+
+Output:
+System.out.println("Text");
+System.out.println(variabelnamn);
+
+Förkortningar i IntelliJ:
+sout+enter
+fori+enter
+
+
+Identifiers:
+Alltid engelska
+Bra med beskrivande ord
+Måste börja med en bokstav men kan sedan innehålla:
+	siffror och underscore(_)
+Case sensitive - liten och stor bokstav ger olika variabler
+
+Keywords:
+Det finns vissa ord som är reserverade i Java som man inte kan använda som variabler
+Fortfarande case sensitive. Man ka inte använda "if", men "If" går bra
+
+Variabler - Lagringsplatser
+Används för att lagra data
+En variabel kan förändras med hjälp av "="
+
+
+Namngivning av variabler:
+Börja med liten bokstav
+Om man vill beskriva meningen använder man camelCasing
+
+Har man valt en datatyp så är det den som gäller
+
+Primitiva datatyper i java:
+boolean     true/false (reserverade keywords)
+
+byte        8-bit signed integer (-128 tom 127)
+                126+1=127
+                127+1=-128
+                Det går runt och runt
+short       16-bit signed integer
+int         32-bit signed integer (-2,147,483,648 tom 2,147,483,647)
+long        64-bit signed integer
+
+char        unsigned 16-bit Unicode characters  (0 tom 65,535)
+                unsigned = inga negativa värden
+                Karaktärer
+
+
+double      Double-precision floating point IEEE_754 (64-bit)
+                    lagring av decimaltal
+                    Kan lagra 15-16 decimaler
+                    Använd alltid punkt
+                    0.1 är samma som .1
+float       Singleprecision floating point IEEE_754 (32-bit)
+                    lagring av decimaltal
+                    Kan lagra 6-7 decimaler
+                    Skriv "f" efter talet för att tala om att det är float
+                    0.1f är samma som .1f
+
+Man kan skriva "var" som datatyp och då bestämmer Java vilken datatyp som ska läggas in beroende på vad man skrivit in efter "="
+    Endast lokala variabler
+
+Signed betyder att en variabel kan lagra både positiva och negativa tal
+Unsigned innebär att en variabel bara kan lagra positiva tal
+
+Character Escape Sequences:
+C:\Users\julia\Desktop\Julia Programmering\JA22\Java\PrimitivaDatatyperVillkorLoopar.pdf Sida 26
+
+Block:
+{
+X är tillgänglig här
+{och här}
+}
+
+Scope:
+{{X är tillgänglig här}
+men inte här
+}
+
+_______________________
+
+2022-08-31
+
+if:
+if(test-condition)  {
+//statement(1);
+//statement(2);
+}
+
+Man behöver inte använda måsvingar men då kan man bara ha ett statement
+C:\Users\julia\Desktop\Julia Programmering\JA22\Java\PrimitivaDatatyperVillkorLoopar.pdf Sida 48
+
+
+if/else:
+Koden får 2 möjliga vägar att gå när if/else-sats körs
+if(test-condition)  {
+//statement(1);
+}
+else    {
+//statement(2);
+}
+
+Condition examples:
+int a = 10;
+a > 1               true
+a > 1 && a < 10     false   obs: a > 1 är true men a < 10 är false vilket gör att resultatet blir salse
+a < 100 || a > 0    true
+a != 0              true
+a == 10             true    obs: ej använda "==" på decimaltal (float och double)
+a <= 10             true
+a < 0               false
+a != 10 && a < 9    false
+a > 10 || a < 9     false
+a != 10             false
+a == 1              false
+a > 10              false
+
+Nested if:
+if-sats i en if-sats
+Använd helst inte nested-if eftersom det blir svårt att läsa
+Använd hellre:
+if(condition(1) && condition(2)  ) {
+//statement(1);
+}
+
+Switch statement:
+Ett annat sätt att skriva en if/else if/else-statement
+
+How to extract a method:
+1. Markera raden du vill ska bli en metod
+2. Högerklicka och välj "Extract Method"
+
+break:
+Behöver alltid ett villkor för att användas
+Ett sätt att avsluta loopen och fortsätter efter loopen
+
+continue:
+Behöver alltid ett villkor för att användas
+Hoppar direkt till slutet i loopen och påbörjar nästa varv
+
+Git:
+Bara funktionshantera .java
+Aldrig .class
+
+
+Complexa Datatyper:
+Objekt Orienterad Programmering: OOP
+Lokal variabel finns i en main-metod
+Klassvariabler finns i en egen class-fil
+
+När man har skapat en klass kan man skapa en variabel med samma namn
+Ex.
+Box box;
+Box = Klass
+box = Variabel
