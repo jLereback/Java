@@ -39,7 +39,7 @@ public class Variables {
 /*
         int value;
         value = scanner.nextInt();
- */
+*/
 /*
         int i;
 

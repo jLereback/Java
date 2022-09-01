@@ -21,6 +21,7 @@ System.out.println(variabelnamn);
 Förkortningar i IntelliJ:
 sout+enter
 fori+enter
+main+enter
 
 
 Identifiers:
@@ -32,7 +33,7 @@ Case sensitive - liten och stor bokstav ger olika variabler
 
 Keywords:
 Det finns vissa ord som är reserverade i Java som man inte kan använda som variabler
-Fortfarande case sensitive. Man ka inte använda "if", men "If" går bra
+Fortfarande case sensitive. Man kan inte använda "if", men "If" går bra
 
 Variabler - Lagringsplatser
 Används för att lagra data

@@ -3,8 +3,6 @@ package se.iths;
 public class Complex {
     public static void main(String[] args) {
 
-        int i = 0;
-
         Box b = new Box();
         b.width = 10;
         System.out.println(b.width);
