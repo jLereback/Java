@@ -169,3 +169,15 @@ Ex.
 Box box;
 Box = Klass
 box = Variabel
+
+
+2022-09-02
+
+
+String input = sc.nextLine();
+BigDecimal saldo = ew BigDecimal();
+BigDecimal interest = new BigDecimal("0.02");
+System.out.println(balande.multiply(interest));
+
+
+ctrl+alt+M

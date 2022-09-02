@@ -22,8 +22,9 @@ public class Tasks {
         //task2_8();
         //task2_8_2();
         //task2_9();
+        //task2_9_2();
         //task2_10();
-        //task2_11();
+        task2_11();
         //task2_12();
 
 
@@ -149,14 +150,12 @@ public class Tasks {
         System.out.println("Give me a random number");
         int num = sc.nextInt();
 
-        if (num < 100) {
+        if (num > 100) {
+            System.out.println("Your number is bigger than 100");
+        } else if (num < 100) {
             System.out.println("Your number is smaller than 100");
         } else if (num == 100) {
             System.out.println("Your number is exactly 100");
-        } else if (num > 100) {
-            System.out.println("Your number is bigger than 100");
-        } else {
-            System.out.println("Something went wrong");
         }
 
 
@@ -164,19 +163,20 @@ public class Tasks {
     private static void task2_5 () {
         Scanner sc = new Scanner(System.in);
         String month = sc.nextLine();
+        month = month.toLowerCase();
         switch (month) {
-            case "January" -> System.out.println("1");
-            case "February" -> System.out.println("2");
-            case "Mars" -> System.out.println("3");
-            case "April" -> System.out.println("4");
-            case "May" -> System.out.println("5");
-            case "June" -> System.out.println("6");
-            case "July" -> System.out.println("7");
-            case "August" -> System.out.println("8");
-            case "September" -> System.out.println("9");
-            case "October" -> System.out.println("10");
-            case "November" -> System.out.println("11");
-            case "December" -> System.out.println("12");
+            case "january" -> System.out.println("1");
+            case "february" -> System.out.println("2");
+            case "mars" -> System.out.println("3");
+            case "april" -> System.out.println("4");
+            case "may" -> System.out.println("5");
+            case "june" -> System.out.println("6");
+            case "july" -> System.out.println("7");
+            case "august" -> System.out.println("8");
+            case "september" -> System.out.println("9");
+            case "october" -> System.out.println("10");
+            case "november" -> System.out.println("11");
+            case "december" -> System.out.println("12");
             default -> System.out.println("Something went wrong");
         }
     }
@@ -184,11 +184,13 @@ public class Tasks {
         Scanner sc = new Scanner(System.in);
         int level;
         do {
-            System.out.println("Welcome!");
-            System.out.println("Choose a level");
-            System.out.println("1. Easy     (1-10)");
-            System.out.println("2. Medium   (1-100)");
-            System.out.println("3. Hard   (1-1000)");
+            System.out.println("""
+                    Welcome!
+                    Choose a level
+                    1. Easy     (1-10)
+                    2. Medium   (1-100)
+                    3. Hard   (1-1000)
+                    """);
 
             level = sc.nextInt();
             if(level == 1)   {
@@ -248,7 +250,14 @@ public class Tasks {
     private static void task2_9 () {
         Scanner sc = new Scanner(System.in);
 
-        for (int i = 65536; i >= 2; i /= 2) {
+        for (int i = 65536; i >= 2; i >>= 1) {
+            System.out.println(i);
+        }
+    }
+    private static void task2_9_2 () {
+        Scanner sc = new Scanner(System.in);
+
+        for (int i = 65536; i >= 2; i >>= 1) {
             System.out.println(i);
         }
     }
@@ -274,18 +283,15 @@ public class Tasks {
     private static void task2_11 () {
         Scanner sc = new Scanner(System.in);
         System.out.println("Give me a number");
-        int num = sc.nextInt();
+        long num = sc.nextLong();
 
         while (num > 2) {
             if (num % 2 == 1)    {
                 num = num * 3 + 1;
-                System.out.println(num);
-
             } else  {
                 num = num / 2;
-                System.out.println(num);
-
             }
+            System.out.println(num);
         }
 
     }

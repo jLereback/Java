@@ -4,55 +4,58 @@ import java.util.Scanner;
 
 public class Variables {
 
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-/*        byte number = 123;
-        System.out.println(number);
-*/
-/*
+        //variabler();
+        //tasks();
+        //switchar();
+        //tasks2();
+    }
+
+    private static void variabler() {
+        Scanner sc = new Scanner(System.in);
+
+
+        byte number = 123;
+            System.out.println(number);
         int integerValue = Integer.MAX_VALUE;
         int secondIntegerValue = 1;
 
         int sum = integerValue + secondIntegerValue;
 
-        System.out.println(sum);
-*/
-/*
+            System.out.println(sum);
         float singlePrecision = Integer.MAX_VALUE;
 
         float f = .1f;
-        System.out.println(f);
-        System.out.printf("%.10f\n", f); //printf = print formatering (jag kan välja antal decimaltecken)
+            System.out.println(f);
+            System.out.printf("%.10f\n",f); //printf = print formatering (jag kan välja antal decimaltecken)
 
         float fValue = 16777216.0f;
         System.out.println(fValue);
-        System.out.printf("%.1f\n", fValue);
-*/
-/*        char ch = 0x41;
+        System.out.printf("%.1f\n",fValue);
+        char ch = 0x41;
         char ch2 = 65;
         char ch3 = 'A';
-        System.out.println(ch);
-        System.out.println(ch2);
-        System.out.println(ch3);
-*/
-/*
+            System.out.println(ch);
+            System.out.println(ch2);
+            System.out.println(ch3);
         int value;
-        value = scanner.nextInt();
-*/
-/*
+        value = sc.nextInt();
         int i;
 
-        i = 2 * value;
+        i =2*value;
 
         int k = i + 1;
 
-        System.out.println(k);
-*/
-/*
+            System.out.println(k);
+    }
+    private static void tasks () {
+        Scanner sc = new Scanner(System.in);
+
         //Övning 1:
         int x, y;
-        x = (int)120.954;
+        x = (int) 120.954;
         y = x * 2;
         System.out.println(x + y);
 
@@ -60,20 +63,22 @@ public class Variables {
         s = "fäkt";
         System.out.println("An" + s + "a");
 
-        String a = "an", b = "be", d= "do";
+        String a = "an", b = "be", d = "do";
         System.out.println(a + b + a + d + b);
 
         int x2 = 2, y2 = 4, z = 8;
-        System.out.println( (x2 * y2 + z) / y2 - z + y2 / (x2 * z / x2) );
+        System.out.println((x2 * y2 + z) / y2 - z + y2 / (x2 * z / x2));
 
         //Övning 2:
 
         System.out.println("Vad heter du?");
-        String name = scanner.nextLine();
+        String name = sc.nextLine();
         System.out.println("Hej " + name);
-*/
-/*        //Old version
-        int x = scanner.nextInt();
+    }
+    private static void switchar () {
+        Scanner sc = new Scanner(System.in);
+        //Old version
+        int x = sc.nextInt();
         switch (x)  {
             case 1:
                 System.out.println("x is one");
@@ -86,17 +91,19 @@ public class Variables {
                 break;
             default:
                 System.out.println("wrong number");
-        }*/
-/*        //new version
-        int x = scanner.nextInt();
+        }
+        //new version
+        int x2 = sc.nextInt();
 
-        switch (x) {
-            case 1 -> System.out.println("x is one");
-            case 2 -> System.out.println("x is two");
-            case 3 -> System.out.println("x is tree");
+        switch (x2) {
+            case 1 -> System.out.println("x2 is one");
+            case 2 -> System.out.println("x2 is two");
+            case 3 -> System.out.println("x2 is tree");
             default -> System.out.println("wrong number");
-        }*/
-/*        //Övning1 for-loop:
+        }
+    }
+    private static void tasks2() {
+        //Övning1 for-loop:
         for (int i = 10; i <= 100; i += 10) {
             System.out.println(i);
         }
@@ -112,7 +119,8 @@ public class Variables {
         //Övning3 for-loop:
         for (char c = 'a'; c <= 'z'; c++) {
             System.out.print(c);
-        }*/
+        }
+    }
 /*        //Endast tillgänglig för for-loopen
         for (int i = 10; i >= 0 ; i--) {
             System.out.println(i);
@@ -208,5 +216,5 @@ public class Variables {
         }
 */
 
-    }
+
 }
