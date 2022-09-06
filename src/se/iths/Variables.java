@@ -11,6 +11,11 @@ public class Variables {
         //tasks();
         //switchar();
         //tasks2();
+        //parseDouble();
+        //integer();
+        //integer2();
+        //integer3();
+
     }
 
     private static void variabler() {
@@ -18,18 +23,18 @@ public class Variables {
 
 
         byte number = 123;
-            System.out.println(number);
+        System.out.println(number);
         int integerValue = Integer.MAX_VALUE;
         int secondIntegerValue = 1;
 
         int sum = integerValue + secondIntegerValue;
 
-            System.out.println(sum);
+        System.out.println(sum);
         float singlePrecision = Integer.MAX_VALUE;
 
         float f = .1f;
-            System.out.println(f);
-            System.out.printf("%.10f\n",f); //printf = print formatering (jag kan välja antal decimaltecken)
+        System.out.println(f);
+        System.out.printf("%.10f\n",f); //printf = print formatering (jag kan välja antal decimaltecken)
 
         float fValue = 16777216.0f;
         System.out.println(fValue);
@@ -37,9 +42,9 @@ public class Variables {
         char ch = 0x41;
         char ch2 = 65;
         char ch3 = 'A';
-            System.out.println(ch);
-            System.out.println(ch2);
-            System.out.println(ch3);
+        System.out.println(ch);
+        System.out.println(ch2);
+        System.out.println(ch3);
         int value;
         value = sc.nextInt();
         int i;
@@ -48,7 +53,7 @@ public class Variables {
 
         int k = i + 1;
 
-            System.out.println(k);
+        System.out.println(k);
     }
     private static void tasks () {
         Scanner sc = new Scanner(System.in);
@@ -121,100 +126,77 @@ public class Variables {
             System.out.print(c);
         }
     }
-/*        //Endast tillgänglig för for-loopen
-        for (int i = 10; i >= 0 ; i--) {
-            System.out.println(i);
-        }
-
-        //Tillgänglig för resten av koden
-        int i = 10;
-        for (; i >= 0 ; i--) {
-            System.out.println(i);
-        }
-        */
-/*
-        int i = 10;
-        for (;  ; ) {
-            if(i < 0 )
-                break;
-            System.out.println(i);
-            i--;
-        }
-*/
-/*        int i = 10;
-        while (i >= 0) {
-            System.out.println(i);
-            i--;
-        }*/
-/*
+    private static void taskparseDouble() {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Skriv in ett tal:");
-        int x = scanner.nextInt();
+        int x = sc.nextInt();
 
         System.out.println(x);
 
         System.out.println("Skriv in ett tal med decimal");
-        double d = scanner.nextDouble();
+        double d = sc.nextDouble();
 
         System.out.println(d);
 
-        String s = scanner.next();
+        String s = sc.next();
         System.out.println(s);
 
         double d2 = Double.parseDouble(s);
         System.out.println(d2);
-*/
-/*
-        int x = getInteger(scanner);
     }
-        private static int getInteger(Scanner scanner) {
-            int i = 0;
-            boolean success = false;
-            do (!success) {
-                try {
-                    String s = scanner.next();
-                    i = Integer.parseInt(s);
-                    success = true;
-                    System.out.println(i);
-                } catch (Exception e) {
-                    System.out.println("Error");
-                }
+    private static void integer()    {
+        Scanner sc = new Scanner(System.in);
+        int x = getInteger(sc);
+    }
+    private static int getInteger(Scanner sc) {
+        int i = 0;
+        boolean success = false;
+        do (!success) {
+            try {
+                String s = sc.next();
+                i = Integer.parseInt(s);
+                success = true;
+                System.out.println(i);
+            } catch (Exception e) {
+                System.out.println("Error");
             }
-            while (!success) ;
-            return i;
         }
-*/
-/*
-        int x = getInteger2(scanner);
-        }
-        private static int getInteger2(Scanner scanner) {
-            int i = 0;
-            boolean success = false;
-            while(true)  {
-                try {
-                    String s = scanner.next();
-                    i = Integer.parseInt(s);
-                    System.out.println(i);
-                    break;
-                } catch (Exception e)   {
-                    System.out.println("Error");
-                }
+        while (!success) ;
+        return i;
+    }
+    private static void integer2()  {
+        Scanner sc = new Scanner(System.in);
+        int x = getInteger2(sc);
+    }
+    private static int getInteger2(Scanner sc) {
+        int i = 0;
+        boolean success = false;
+        while (true) {
+            try {
+                String s = sc.next();
+                i = Integer.parseInt(s);
+                System.out.println(i);
+                break;
+            } catch (Exception e) {
+                System.out.println("Error");
             }
-            return i;
-*/
-/*
-        int x = getInteger3(scanner);
         }
-        public static int getInteger3(Scanner scanner){
-            int i = 0;
-            while(!scanner.hasNextInt()){
-                // Invalid char to be parsed as integer, remove from input
-                scanner.next();
-                System.out.println("remove Invalid chars");
-            }
-            i = scanner.nextInt();
-            return i;
+        return i;
+    }
+    private static void integer3()  {
+        Scanner sc = new Scanner(System.in);
+        int x = getInteger3(sc);
+    }
+    public static int getInteger3(Scanner sc){
+        int i = 0;
+        while(!sc.hasNextInt()){
+            // Invalid char to be parsed as integer, remove from input
+            sc.next();
+            System.out.println("remove Invalid chars");
         }
-*/
+        i = sc.nextInt();
+        return i;
+    }
 
 
 }

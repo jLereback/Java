@@ -2,7 +2,7 @@ package se.iths;
 
 import java.util.Scanner;
 
-public class Tasks {
+public class Tasks_1_2 {
 
     public static void main(String[] args) {
         //task1_2();
@@ -24,7 +24,7 @@ public class Tasks {
         //task2_9();
         //task2_9_2();
         //task2_10();
-        task2_11();
+        //task2_11();
         //task2_12();
 
 
