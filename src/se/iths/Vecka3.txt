@@ -1,0 +1,56 @@
+2022-09-06
+
+Vad skrivs ut?
+int x = 5;
+System.out.println(x++);
+System.out.println(x);
+Svar:
+5
+6
+
+Vad skrivs ut?
+int x = 5;
+System.out.println(++x);
+System.out.println(x);
+Svar:
+6
+6
+
+Metod kallas för funktioner i andra programmeringspråk
+En metod är ett stycke kod som vi ger ett namn och som vi kan återanvända på många ställen
+Metodnamn brukar vara namn - Saker som man gör
+metodNamn börjar alltid på liten bokstav
+KlassNamn börjar alltid på stor bokstav
+Man använder camelCase (liten första bokstav och stor bokstav i nästa ord)
+DRY = Don't repeat yourself
+WET = Write everything twice
+
+
+Static = Det finns bara ett exemplar av metoden
+utan static =
+
+
+När bör vi skapa metoder?
+• Dyker samma kod upp på flera ställen?
+    • Gör den till en metod!
+• Kan ni komma på ett logiskt namn för ett kodstycke?
+    • Gör det till en metod!
+• Har en metod många rader kod, > 3, kan vi flytta en del till egen metod?
+    • Gör det till en metod!
+
+Parametrar:
+In-värde i metoder
+public static void test(parameter) {
+System.out.println(parameter)
+}
+
+ex.
+public static void test(int i) {
+System.out.println(i)
+}
+
+
+Return:
+Java kan bara returnera ett värde, tyvärr
+Vill man returnera flera värden kan man returnera en array eller box som innehåller olika värden, men det tar bara en plats i minnet när den returneras
+

@@ -151,7 +151,7 @@ public class Variables {
     private static int getInteger(Scanner sc) {
         int i = 0;
         boolean success = false;
-        do (!success) {
+        while (!success) {
             try {
                 String s = sc.next();
                 i = Integer.parseInt(s);
