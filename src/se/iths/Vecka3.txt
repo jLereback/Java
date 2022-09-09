@@ -31,12 +31,9 @@ utan static =
 
 
 När bör vi skapa metoder?
-• Dyker samma kod upp på flera ställen?
-    • Gör den till en metod!
-• Kan ni komma på ett logiskt namn för ett kodstycke?
-    • Gör det till en metod!
-• Har en metod många rader kod, > 3, kan vi flytta en del till egen metod?
-    • Gör det till en metod!
+• Dyker samma kod upp på flera ställen? -> Gör den till en metod!
+• Kan ni komma på ett logiskt namn för ett kodstycke? -> Gör det till en metod!
+• Har en metod många rader kod, > 3, kan vi flytta en del till egen metod? -> Gör det till en metod!
 
 Parametrar:
 In-värde i metoder
@@ -53,4 +50,26 @@ System.out.println(i)
 Return:
 Java kan bara returnera ett värde, tyvärr
 Vill man returnera flera värden kan man returnera en array eller box som innehåller olika värden, men det tar bara en plats i minnet när den returneras
+
+
+2022-09-07
+Man kan tilldela värden flera gånger genom att hänvisa till klassen i andra klasser
+public class Box {
+    int height;
+    int width;
+    int length;
+}
+
+Man kan bara tilldela ett värde en gång i en klass när man skriver final framför variabeln. Dock måste man definiera variablerna i klassen direkt
+public class Box {
+    final int height = 10;
+    final int width = 10;
+    final int length = 10;
+}
+
+
+
+private fält och metoder är endast tillgängliga från kod placerad i metoder tom tillhör klassen
+
+public ger access från andra klasser
 
