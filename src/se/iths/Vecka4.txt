@@ -1,0 +1,35 @@
+2022-09-13
+
+Använda metoder för att bryta ner applikation i mindre delar, öka kodens läsbarhet samt undvika upprepning av kod
+
+Man kan returnera mer än ett värde om vi returnerar olika värden i en array
+
+Constructor används för att skapa objekt
+
+Man vill undvika setters så mycket som möjligt
+
+System.out.printf("%.2f, f"); == System.out.format("%.2f, f");
+
+
+Constructor:
+
+Default-constructor saknar parameter, även kallat parameterlös constructor
+ex. new Car();
+
+Overloaded har en parameter som invärde
+ex. new Car(true);
+
+
+private constructor
+Förhindrar att instanser av klassen skapas med new
+Fält som är private kan bara bli åtkommen från andra fält i samma klass
+Om ett public fält hämtar värden från private i samma klass kan kod som är i annan klass komma åt private genom att hämta värdet från public
+
+
+
+Kompilatorn väljer rätt constructor baserat på signatur i samband med kompileringen. Returtyp ingår inte i signaturen. Signaturen är metodnamn samt parametrar
+
+En constructor kan kopiera ett objekt
+
+
+
