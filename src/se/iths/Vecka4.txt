@@ -20,7 +20,7 @@ Overloaded har en parameter som invärde
 ex. new Car(true);
 
 
-private constructor
+Privat constructor
 Förhindrar att instanser av klassen skapas med new
 Fält som är private kan bara bli åtkommen från andra fält i samma klass
 Om ett public fält hämtar värden från private i samma klass kan kod som är i annan klass komma åt private genom att hämta värdet från public
@@ -32,4 +32,35 @@ Kompilatorn väljer rätt constructor baserat på signatur i samband med kompile
 En constructor kan kopiera ett objekt
 
 
+
+noStatic = tillhör alltid ett objekt, är inte fri (som i en diktatur)
+static = finns bara i ett exemplar, hör inte ihop med ett objekt och är helt självständig (som i en demokrati)
+
+En statisk metod kan endast använda andra statiska metoder eller fält i klassen
+Ett statiskt fält delas mellan alla objekt skapade i klassen
+
+En final-variabel kan bara tilldelas ett värde en gång. Så fort man skrivit in ett "=" för att definiera kan man inte göra det igen
+
+
+
+2022-09-14
+Använd inte förkortningar som inte gå att uttala i koden eller som man vanligtvis inte vet vad det betyder
+
+Undvik att använda enstaka bokstäver som namn i koden (gäller ej for-loop)
+
+Composition: När en klass innehåller en referens till ett tillhörande objekt som beskriver ett annat objekt i klassen
+
+ex.
+class Circle
+{float radius;}
+
+class Cylinder
+{Circle base;
+float height;}
+
+this. - representerar värde eller objekt från en metod i samma klass
+super. - representerar värde eller objekt från en klass, ett steg högre, i hierarkin
+
+super() - bygger ett objekt
+super. - hämtar ett objekt
 
