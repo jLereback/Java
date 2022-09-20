@@ -30,11 +30,14 @@ Om ett public fält hämtar värden från private i samma klass kan kod som är 
 Kompilatorn väljer rätt constructor baserat på signatur i samband med kompileringen. Returtyp ingår inte i signaturen. Signaturen är metodnamn samt parametrar
 
 En constructor kan kopiera ett objekt
+En constructor heter samma sak som klassen och har ingen returtyp, inte ens void
 
 
 
 noStatic = tillhör alltid ett objekt, är inte fri (som i en diktatur)
+    för att kalla på metoden: objekt.metodNamn;
 static = finns bara i ett exemplar, hör inte ihop med ett objekt och är helt självständig (som i en demokrati)
+    för att kalla på metoden: metodNamn(objekt);
 
 En statisk metod kan endast använda andra statiska metoder eller fält i klassen
 Ett statiskt fält delas mellan alla objekt skapade i klassen
@@ -64,3 +67,4 @@ super. - representerar värde eller objekt från en klass, ett steg högre, i hi
 super() - bygger ett objekt
 super. - hämtar ett objekt
 
+egenskaper = variabel
