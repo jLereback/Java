@@ -1,0 +1,49 @@
+2022-09-20
+
+Man kan bara ha en publik klass per fil
+Om man ska ha flera klasser i samma fil måste man skriva såhär:
+public class Klass {
+}
+class Klass2 {
+}
+
+En constructor för Klass2 utan parametrar ser ut såhär:
+public class Klass {
+    public Klass() {
+    }
+}
+
+Override:
+Har en metod i en superklass och har exakt samma metod i subklassen
+
+Overload:
+Har en metod i en superklass och har en metod med samma namn i subklassen men med andra parametrar
+
+Fyra OOP (Objekt Orienterad Programmering) koncept:
+
+Encapsulation
+    Deklarera fält privata och accessa via publika get/set metoder
+    Samla fält och metoder som jobbar med dessa fält i samma klass
+
+Inheritance
+    Låter en klass få egenskaperna (metoder och fält) från en annan klass genom att ärva den
+
+Polymorphism
+    Låter ett objekt ha många olika former. Vi kan låta en variabel av superklass typ referera till en subklass. Varje subklass kan ha sin egen implementation av metoder. I runtime kan rätt metod väljas att köra baserat på typ. Override
+    I java är alla klasser polymorpha då de är minst två typer, sig själva och Objekt.
+
+Abstraction
+    Hanterar komplexitet genom att dölja onödig komplexitet för användaren.
+    Vi kan använda och utöka med mer komplex logik ovanpå abstraktionen utan att behöva förstå den gömda komplexiteten.
+
+KOMMER PÅ TENTAN!!!
+Tillåter Java multipelt (flera) arv?
+Svar: NEJ!!!
+
+
+Override fungerar bara med icke-statiska metoder
+
+OOP design principles - SOLID
+
+Inte extenda rabatter i labben eftersom alla kanske har olika rabatter
+Man kan istället ha en superklass som heter rabatt och sedan göra olika subklasser som motsvarar enskilda rabatter
