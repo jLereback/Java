@@ -47,3 +47,73 @@ OOP design principles - SOLID
 
 Inte extenda rabatter i labben eftersom alla kanske har olika rabatter
 Man kan istället ha en superklass som heter rabatt och sedan göra olika subklasser som motsvarar enskilda rabatter
+
+
+
+
+instance betyder att man skapar ett nytt objekt
+tex. new Animal();
+Interface:
+
+För att man inte ska kunna skapa ett nytt objekt av en klass kan man skapa ett interface istället
+
+När man vill extenda ett interface skriver man implements istället för extend
+
+Interface kan inte ärva en klass
+
+Man kan implementera många interface
+
+Ett interface kan i OOP inte innehålla kod, kan bara innehålla definitioner av metodnamn
+
+Exempel på class:
+public class Mammal {
+    void talk() {
+    }
+}
+public class Duck extends Mammal {
+    public void talk() {
+    }
+}
+
+
+Exempel på interface:
+public interface Mammal {
+    void talk();
+}
+
+public class Duck implements Mammal {
+    public void talk() {
+    }
+}
+
+
+
+Abstract class:
+
+För att man inte ska kunna skapa ett nytt objekt av en klass kan man även använda sig av en abstract klass
+
+Abstract betyder att den inte är implementerad än utan är teoretisk
+
+Alltid använda en abstract klass när man inte vill att man ska kunna göra ett nytt objekt av klassen
+
+För att kunna använda sig av metoden talk måste man först extenda klassen
+
+I en abstract klass kan man ha både kod och fält till skillnad från interface
+
+Superklassen ska i princip alltid vara abstract
+
+Exempel:
+public abstract class Mammal {
+    abstract void talk() {
+    }
+}
+public class Duck extends Mammal {
+    public void talk() {
+    }
+}
+
+
+Man kan förhindra att skapa ett nytt objekt av en klass genom att använda en private constructor
+
+Vill man kunna skapa ett nytt objekt men inte tillåta att klassen ärvs kan man använda final class
+
