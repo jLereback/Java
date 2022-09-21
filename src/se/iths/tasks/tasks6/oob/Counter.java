@@ -1,4 +1,4 @@
-package se.iths.tasks.tasks6;
+package se.iths.tasks.tasks6.oob;
 
 public class Counter {
     private int number;

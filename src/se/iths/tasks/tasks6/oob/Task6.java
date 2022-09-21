@@ -1,6 +1,4 @@
-package se.iths.tasks.tasks6;
-
-import java.awt.*;
+package se.iths.tasks.tasks6.oob;
 
 public class Task6 {
     public static void main(String[] args) {
