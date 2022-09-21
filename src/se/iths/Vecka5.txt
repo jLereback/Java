@@ -121,3 +121,10 @@ Vill man kunna skapa ett nytt objekt men inte tillåta att klassen ärvs kan man
 Gå tillbaka och kolla på lektionen 2022-09-20 kl 13.29
 
 
+2022-09-21
+
+DTO = Data Transfer Objekt
+
+
+
+
