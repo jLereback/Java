@@ -54,6 +54,9 @@ Man kan istället ha en superklass som heter rabatt och sedan göra olika subkla
 instance är samma sak som ett objekt
 Att instanciera betyder att man skapar ett nytt objekt
 tex. new Animal();
+
+
+
 Interface:
 
 För att man inte ska kunna skapa ett nytt objekt av en klass kan man skapa ett interface istället
@@ -125,6 +128,12 @@ Gå tillbaka och kolla på lektionen 2022-09-20 kl 13.29
 
 DTO = Data Transfer Objekt
 
+__________
+I interface är standarden att allt är public men man behöver inte skriva det
 
+Man behöver inte skriva:
+public void metodNamn(){}
 
-
+Det räcker med:
+void metodNamn(){}
+__________

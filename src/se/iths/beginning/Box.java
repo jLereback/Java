@@ -1,4 +1,4 @@
-package se.iths;
+package se.iths.beginning;
 
 public class Box {
     int height;
