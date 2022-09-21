@@ -51,7 +51,8 @@ Man kan istället ha en superklass som heter rabatt och sedan göra olika subkla
 
 
 
-instance betyder att man skapar ett nytt objekt
+instance är samma sak som ett objekt
+Att instanciera betyder att man skapar ett nytt objekt
 tex. new Animal();
 Interface:
 
@@ -116,4 +117,7 @@ public class Duck extends Mammal {
 Man kan förhindra att skapa ett nytt objekt av en klass genom att använda en private constructor
 
 Vill man kunna skapa ett nytt objekt men inte tillåta att klassen ärvs kan man använda final class
+
+Gå tillbaka och kolla på lektionen 2022-09-20 kl 13.29
+
 
