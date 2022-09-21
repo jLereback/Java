@@ -137,3 +137,12 @@ public void metodNamn(){}
 Det räcker med:
 void metodNamn(){}
 __________
+
+Anonym klass:
+En anonym klass är inte återanvändbar
+Är inte cleanCode
+
+Lambda:
+Kan bara användas i interface
+För att lambda ska fungera får interfacet bara innehålla en enda metod
+Undvik att använda lambda när man behöver skriva flera rader, då är det b'ättre att anropa en metod
