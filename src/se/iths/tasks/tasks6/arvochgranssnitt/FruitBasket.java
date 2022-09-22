@@ -1,13 +1,14 @@
 package se.iths.tasks.tasks6.arvochgranssnitt;
 
-public abstract class FruitBasket {
+public class FruitBasket {
     public static void main(String[] args) {
-        Fruit apelsin = new Orange(27);
-        Berry blåbär = new Blueberry(3);
+        Fruit firstOrange = new Orange(27);
+        Citrus secondOrange = new Orange(31);
+        Berry firstBlueberry = new Blueberry(3);
 
-        apelsin.beEaten("munnen");
-        blåbär.beEaten("munnen");
-
+        firstOrange.beEaten("mouth");
+        secondOrange.beEaten("trash");
+        firstBlueberry.beEaten("mouth");
 
     }
 }

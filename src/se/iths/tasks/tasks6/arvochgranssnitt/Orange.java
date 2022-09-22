@@ -7,6 +7,6 @@ public class Orange extends Citrus {
 
     @Override
     public void beEaten(String mouth) {
-        System.out.println("Apelsinen färdas med en gaffel till " + mouth);
+        System.out.println("The orange is going toward the " + mouth + " at a fork");
     }
 }

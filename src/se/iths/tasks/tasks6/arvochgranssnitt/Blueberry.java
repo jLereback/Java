@@ -7,6 +7,6 @@ public class Blueberry extends Berry {
 
     @Override
     public void beEaten(String mouth) {
-        System.out.println("Blåbäret färdas i en sked till " + mouth);
+        System.out.println("The blueberry goes toward the " + mouth + " in a spoon");
     }
 }
