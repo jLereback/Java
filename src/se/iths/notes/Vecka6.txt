@@ -1,0 +1,29 @@
+2022-09-27
+
+Quiz 4:
+En klass kan implementera mer än ett interface
+Ett interface kan EXTENDA (inte implementera) ett annat interface
+Alla metoder på ett interface är public som default
+Man får inte ha privata saker i ett interface
+Alla fält är alltid final static i ett interface
+Abstrakta klasser kan inte ha metoder
+Private constructor:
+    Förhindra instanser av klassen
+    Singelton klass - bara tillåter att ett enda exemplar skapas (endast en instans)
+    Begränsa antalet instanser
+    Förhindrar arv (man kan inte ärva en klass med private constructor)
+    Returnera samma instans till flera (caching)
+        BigDecimal är ett exempel på Caching
+
+
+KeyValue Pair (2-Tuple class):
+
+Man använder ofta metoder med namn "of" för att skapa objekt i klassen Pair
+
+
+Ett exempel på generics är arrayList
+
+Använd bara enstaka stora bokstäver som parameter (datatypvariabler) i generiska klasser, ex. T
+Vi deklarerar sedan T när vi skapar ett objekt av klassen
+
+Wildcard operator innebär att man inte specificerar en inparameter till en metod utan skriver ett frågetecken per parameter istället
