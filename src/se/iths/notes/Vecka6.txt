@@ -27,3 +27,41 @@ Använd bara enstaka stora bokstäver som parameter (datatypvariabler) i generis
 Vi deklarerar sedan T när vi skapar ett objekt av klassen
 
 Wildcard operator innebär att man inte specificerar en inparameter till en metod utan skriver ett frågetecken per parameter istället
+
+
+2022-09-28
+För Labb2:
+Vi ska använda arrayList alternativt hashset om vi vill begränsa kategorier till ett enda exemplar (så det inte blir dubbletter
+
+set - kan bara ta emot ett objekt, set-interfacet kollar equals så det inte är samma referens
+
+Linear Data Structures:
+Alla element ligger bredvid varandra.
+Singel level data struktur
+Bra när man ska hämta information på ett specifikt ställe
+
+
+Non-Linear Data Structures:
+Binary-tree
+Ett objekt överst med flera olika objekt under sig. Som ett släktträd typ
+Multilevel data struktur
+Man kan välja att processa en gren i taget och då krävs inte lika mycket minne
+
+TreeSet - Man kan lagra ett objekt en gång men objekten ligger alltid i sorterad ordning
+
+_________________________
+Använd arrayList i Labb2  om man vill lagra många objekt eller värden
+
+Använd hashSet i Labb2 om man vill vara säker på att man inte lagrar dubbletter
+
+Använd hashMap i Labb2 om man vill koppla en nyckel med ett värde
+_________________________
+
+Maps lagrar key-values
+Nyckeln måste vara unik, ex person.nr, streckkod osv
+Sen kan man lagra ett värde tillsammans med nyckeln
+Man kan sedan hämta värdet i mappen med produktID och hämta pris osv
+Man kan bara spara ett värde i nyckeln men värdet kan vara ett objekt och man kan ju spara många värden inuti ett objekt
+Man kan alltså koppla produktID med en produkt i Labb2
+Ska man använda en map så ska man använda Hashmap
+

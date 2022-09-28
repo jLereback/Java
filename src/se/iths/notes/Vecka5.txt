@@ -145,4 +145,4 @@ En anonym klass är inte återanvändbar
 Lambda:
 Kan bara användas i interface
 För att lambda ska fungera får interfacet bara innehålla en enda metod
-Undvik att använda lambda när man behöver skriva flera rader, då är det b'ättre att anropa en metod
+Undvik att använda lambda när man behöver skriva flera rader, då är det bättre att anropa en metod
