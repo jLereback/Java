@@ -5,8 +5,9 @@ import se.iths.tasks.Tasks_1_2;
 public class Main {
 
     public static void main(String[] args) {
-        Safe safe = new Safe();
-        Object pewpew = new Object();
-        safe.store(pewpew);
+        Safe<String> safe = new Safe();
+        System.out.println(safe.retrieve());
+        safe.store("pistol");
+        System.out.println(safe.retrieve());
     }
 }

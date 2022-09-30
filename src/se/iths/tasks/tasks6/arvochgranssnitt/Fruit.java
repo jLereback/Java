@@ -7,7 +7,7 @@ package se.iths.tasks.tasks6.arvochgranssnitt;
 // Se till att de ärver från Animal och att klasserna för
 // respektive djur ärver från rätt klass.
 
-public abstract class Fruit {
+public class Fruit {
 
     public Fruit(int weight) {
         this.weight = weight;
@@ -17,5 +17,12 @@ public abstract class Fruit {
     private final int weight;
 
 
-    public abstract void beEaten(String mouth);
+    public void beEaten(String mouth) {
+
+    }
+
+    public Fruit getWeight() {
+        System.out.println(weight);
+        return null;
+    }
 }
