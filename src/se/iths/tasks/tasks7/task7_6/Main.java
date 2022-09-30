@@ -1,17 +1,19 @@
 package se.iths.tasks.tasks7.task7_6;
 
-import java.util.LinkedList;
-
 public class Main {
     public static void main(String[] args) {
 
-        LinkedList list = new LinkedList<Node>();
-        Stacken.push(12, list);
-        Stacken.push(17, list);
+        Stack<Integer> list = new Stack<>();
+        System.out.println(list.size());
+        list.push(12);
+        System.out.println(list.size());
+        list.push(17);
 
-        list.forEach(System.out :: println);
-        Stacken.pop(list);
-        list.forEach(System.out :: println);
+        System.out.println(list.size());
+        System.out.println(list.pop());
+        System.out.println(list.size());
+        System.out.println(list.pop());
+        System.out.println(list.size());
 
     }
 }
