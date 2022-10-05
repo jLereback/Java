@@ -1,0 +1,85 @@
+2022-10-04
+
+funktionell programmering inplementerade bla lambda.
+
+vi talar om vad vi vill göra.
+
+gamla stilen = fori
+nya = foreach
+
+imperativ programmering = vi styr i detalj
+declarative programmering = vi säger vad som ska göras. Tanken är att det ska bli lättare att läsa
+
+Java uppfyller inte alla krav för att vara ett funktionellt språk
+
+
+
+Pure functions = rena funktioner = returnvärde ska bra bero på inputten och ska
+alltid ge samma svar. enkla metoder. inga sido effekter.
+Undvik Set och get i samma metod i funktionell programmering.
+
+Higher-order functions = funktoner som tar en annan funtion som parameter. eller returnera
+dom som resultat.
+Detta är som interface med lambda.
+Closures = metoden sparar undan datan den behöver till senare tillfälle.
+datan måste vara final!.
+
+Streams
+-------------------------------------------------------------------
+.stream()
+
+Tänkta oss stream som att vi får ett objekt i taget.
+iterate = genereara ett tal i taget. OBS inget stopp, måste begränsas.
+
+tre sätt att vi ström:
+Stream.empty()
+från en lista .stream()
+Stream.iterate()
+
+ström gör inget förens något frågar efter det. (Den är lazy)
+
+koppla på intermediate operationen noll eller fler.
+returnera Stream = intermediate
+
+sedan terminera med en terminerings operation.
+det som returnerar String,long,list osv = terminerande.
+
+Rekommenderas! Använda metoder referenser istället för lambdautryck.
+
+.map används för att byta datatyp.
+    Cat.name är en katt men när man kör .map(Cat::name) så blir det en sträng.
+    Nu kan man skriva
+        .filter(name -> name.startsWith("l"))
+    Istället för
+        .filter(Cat -> Cat.name.startsWith("l"))
+
+
+.mapToInt (i->i)
+.filter används för att behålla eller kasta ett värde. .filter(value -> value <5)
+.sum() summerar streamen.
+.count räknar antalet värden
+
+predicate.not(isFemale) == invertera boolean
+static import = .not(Cat::IsFemale)
+
+optional kan va tom, så sätt .orElse or .throwExeption.
+comperator interface jämför två objekt.
+
+
+
+
+
+intermediate operations
+------------------------
+statefull = kommer ihåg värde, den lagrar det som den får
+-distinct, sorted
+
+stateless = lagrar inte, skickar bara vidare.
+-filter,map,peak
+
+2022-10-05
+
+        catList.stream()
+                .filter(cat -> cat.name().toLowerCase().startsWith("l"))
+                .forEach(System.out::println);
+
