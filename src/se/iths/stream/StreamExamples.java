@@ -20,7 +20,7 @@ public class StreamExamples {
                 new Cat("Luna", 2, true),
                 new Cat("Leo", 1, false));
 
-/*
+
         int sum = integerList.stream()
                 .mapToInt(i -> i)
                 .filter(value -> value < 5)
@@ -64,7 +64,6 @@ public class StreamExamples {
                 .toList();
 
         result.forEach(System.out::println);
-*/
 
         catList.stream()
                 .map(Cat::name)
