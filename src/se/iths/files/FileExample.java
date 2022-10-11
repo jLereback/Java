@@ -6,6 +6,7 @@ import java.nio.file.FileAlreadyExistsException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+import java.util.stream.Stream;
 
 public class FileExample {
     public static void main(String[] args) {
@@ -37,6 +38,23 @@ public class FileExample {
         //Throw exception om en fil redan existerar för att inte råka skriva över befintlig data
         Files.writeString(filePath, "Hello World\n", StandardOpenOption.CREATE_NEW);
 
+        //Printa text som finns i en fil
+        String fileContent = Files.readString(filePath);
+
+        //Printa varje rad i fil som ett element i en lista
+        var listOfLines = Files.readAllLines(filePath);
+
+        //Printa alla rader i fil med Streams:
+        Stream<String> lines = Files.lines(path);
+        lines.forEach(System.out::println);
+
+        //Printa alla rader i fil förutom de raderna som börjar med #:
+        try(Stream<String> lines = Files.lines(filePath)){
+            lines.filter(s-> !s.startsWith("#")).forEach(System.out::println);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
 
 
         */
@@ -53,14 +71,24 @@ public class FileExample {
         System.out.println(filePath);
         System.out.println(Files.exists(filePath));
 
+        readFileAsStream(filePath);
         try {
-            Files.writeString(filePath, "Hello World\n");
+           Files.writeString(filePath, "\nHello World\nHello World", StandardOpenOption.APPEND);
+            String fileContent = Files.readString(filePath);
+            System.out.println(fileContent);
 
         } catch (FileAlreadyExistsException e) {
             System.out.println("File already exists: " + e.getMessage());
         } catch (IOException e) {
             System.out.println(e.getClass().getName() + ": " + e.getMessage());
         }
+    }
 
+    public static void readFileAsStream(Path filePath) {
+        try(Stream<String> lines = Files.lines(filePath)){
+            lines.filter(s-> !s.startsWith("#")).forEach(System.out::println);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

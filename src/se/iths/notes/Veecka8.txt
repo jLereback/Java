@@ -45,3 +45,17 @@ Ta bort fil:
 
 
 
+Använd alltid exceptions med try/catch:
+        try {
+            Files.writeString(filePath, "Hello World\n");
+
+        } catch (FileAlreadyExistsException e) {
+            System.out.println("File already exists: " + e.getMessage());
+        } catch (IOException e) {
+            System.out.println(e.getClass().getName() + ": " + e.getMessage());
+        }
+
+
+json:
+Man kan ha objekt i objekt
+{"name":"Chaya", "age":55, "city":"Boulder", "type":"Canine", "pet":{"name":"Ben} }
