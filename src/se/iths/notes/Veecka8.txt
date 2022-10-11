@@ -1,0 +1,47 @@
+2022-10-11
+
+Använd java.nio
+Använd inte java.io (gammal och dålig)
+
+Aldrig öppna filen i början på programmet och sedan stänga den i slutet eftersom filen är låst för andra användare att använda
+Varje gång du använda filen öppnar du den, gör din sak och sedan stänger den igen
+
+
+Path är en metod som sätter sökvägen:
+    Path path = Path.of("c:/dev/licenses/windows/readme.txt");
+
+Find path to users home folder:
+    String homeFolder = System.getProperty("user.home");
+
+Find operation system:
+    System.out.println("os.name");
+
+Create a file in default temp folder:
+    Files.createTempFile(...)
+
+
+Constructing a path object does not mean the file or directory actually exists
+The path is merely a reference to a potential file
+You’ll have to separately verify its existence
+
+Check if the dictionary actually exists:
+    System.out.println(Files.exists(homePath));
+
+Sätter en ny filsökväg:
+    Path filePath = Path.of(homeFolder, "test.txt");
+
+Kollar om den nya filsökvägen existerar:
+    Path filePath = Path.of(homeFolder, "test.txt");
+    System.out.println(Files.exists(filePath));
+
+Skapa en fil:
+    Files.createFile(filePath);
+
+Byta namn/flytta fil:
+    Files.move(filePath, Path.of(homeFolder, "moved.txt"));
+
+Ta bort fil:
+    Files.delete((filePath));
+
+
+
