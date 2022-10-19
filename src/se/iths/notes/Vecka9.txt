@@ -1,0 +1,15 @@
+2022-10-19
+
+Java är ett multithreadat programmeringsspråk
+Detta innebär att man kan köra flera trådar i programmet samtidigt
+Trådar skapat i en klass som heter "Thread"
+En tråd är alltid kopplad till en tråd i operativsystemet
+En tråd i operativsystemet tar stor plats så det finns en begränsning
+
+För att köra en tråd så implementerar man interfacet Runnable och man måste overrida public void run()
+
+
+
+
+
+

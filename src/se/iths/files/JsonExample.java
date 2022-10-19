@@ -18,7 +18,7 @@ public class JsonExample {
         String json = gson.toJson(discList);
 
         System.out.println(json);
-        //Save json string to textfile
+        //Save json string to file
         String homeFolder = System.getProperty("user.home");
 
         try {
@@ -29,8 +29,7 @@ public class JsonExample {
 
 
         //Read json string from file
-        List<Disc> jsonToObject = gson.fromJson(json, new TypeToken<ArrayList<Disc>>() {
-        }.getType());
+        List<Disc> jsonToObject = gson.fromJson(json, new TypeToken<ArrayList<Disc>>() {}.getType());
 
         jsonToObject.forEach(System.out::println);
     }

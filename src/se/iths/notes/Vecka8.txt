@@ -13,6 +13,9 @@ Path är en metod som sätter sökvägen:
 Find path to users home folder:
     String homeFolder = System.getProperty("user.home");
 
+Set path to working folder:
+    String thisFolder = System.getProperty("src/...");
+
 Find operation system:
     System.out.println("os.name");
 
@@ -59,3 +62,13 @@ Använd alltid exceptions med try/catch:
 json:
 Man kan ha objekt i objekt
 {"name":"Chaya", "age":55, "city":"Boulder", "type":"Canine", "pet":{"name":"Ben} }
+
+2022-10-12
+
+Regex:
+Regular expression
+
+Often called: regex, regexes, regexp, regexps
+Detta uttryck matchar alla varianter på raden ovanför:
+rege(x(es)?|xps?)
+
